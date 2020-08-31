@@ -1,9 +1,0 @@
-- node_modules: thư viện ReactJS.
-- public: giao diện website
-   + index.html: file hiển thị giao diện.
-- src: chưa các file làm việc chính.
-   + index.js: file chạy chính và điều khiển website.
-   + App.js: file tạo components App cho website.
-   + App.css: css cho components App.
-   + serviceWorker.js: quản lí server ứng dụng.
-- package: quản lí thông số ứng dụng (npm start sẽ dựa vào những thông số này để setup).
