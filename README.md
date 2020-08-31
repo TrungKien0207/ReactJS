@@ -1,2 +1,2 @@
-# reacJS
+#ReactJS
 learn reactJS
