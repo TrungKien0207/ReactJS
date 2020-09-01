@@ -1,0 +1,452 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+.menu-area{
+    width: 100%;
+    position: relative;
+    line-height: 30px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-bottom: 2px dashed #242424;
+}
+nav.black{
+    width: 100%;
+    background: #f5dbdb;
+    color: #242424;
+    position: fixed;
+    z-index: 9999;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px dashed palevioletred;
+}
+.menu-content{
+    position: relative;
+
+}
+.menu-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content ul li{
+    margin-right: 60px;
+    list-style-type: none;
+
+}
+.menu-content ul li a{
+    color: #242424;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.menu-content .link:hover {
+    color: palevioletred;
+    transition: all 300ms ease-in;
+}
+
+.header {
+    width: 100%;
+    background: url(./slider-1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;   
+}
+
+.header .slider-text-box {
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+    padding-top: 90px;
+    border-radius: 26px;
+}
+
+.header .slider-text-box .paragraph-1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 1000;
+    font-size: 65px;
+}
+
+.header .slider-text-box .paragraph-2 {
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;
+    margin-top: -50px
+}
+
+                                /* WELCOME */
+.welcome_bakery_area {
+    background: url(./welcome-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    margin: 0px -8px -8px -8px;
+}
+
+.body-welcome {
+    display: flex;
+    height: 100vh;
+}
+
+.body-welcome .welcome-text {
+    margin: 70px 100px 150px 100px;
+    height: 150px;
+    width: 570px;
+    box-sizing: border-box;
+}
+
+.body-welcome .welcome-text .text-1 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: #3e606b;
+    margin-bottom: 15px;
+}
+
+.body-welcome .welcome-text .text-1 p {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Lora", serif;
+    color: #242424;
+    margin-bottom: 0px;
+}
+
+.body-welcome .welcome-text .text-2 p {
+    line-height: 26px;
+    color: #797979;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 35px;
+}
+
+.body-welcome .welcome-image {
+    height: 363px;
+    width: 510px;   
+    margin: 100px 100px 150px 0;
+    
+}
+
+.body-welcome .welcome-image img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.welcome_bakery_area ::before {
+    content: "";
+    background: url(./w-left-techture.png) no-repeat scroll center center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 685px;
+    width: 237px;
+    z-index: -1;
+    opacity: 0.05;
+}
+
+.welcome_bakery_area ::after {
+    content: "";
+    background: url(./w-right-techture.png) no-repeat scroll center center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 685px;
+    width: 237px;
+    z-index: -1;
+    opacity: 0.05;
+}
+
+.unline {
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 0.4;
+}
+
+.main-title {
+    padding-bottom: 25px;
+}
+
+.main-title .title-1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bolder;
+    font-size: 38px;
+    color: #3e606b;
+    display: inline-block;
+    margin: 70px 100px 0px 100px;
+}
+
+.main-title .title-2 {
+    font-family: "Playfair Display", serif;
+    margin: 10px 100px 0px 100px;
+    font-size: 20px;
+    color: #797979;
+    line-height: 30px;
+}
+/* item */
+.cake-feature-item {
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.08);
+    box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.08);
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+.cake_feature_slider {
+    width: 100%;
+    margin: 0 auto;
+}
+.item {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    margin: 0px 80px 0 80px;
+}
+.cake-text {
+    font-family: "Playfair Display", serif;
+    position: relative;
+}
+
+.cake-feature-item .cake-img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cake-feature-item .cake-img img {
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.cake-feature-item .cake-img:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.cake-feature-item .cake-img:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.pest-btn{
+    position: relative;
+    z-index: 1000;
+    background: #94c9d9;
+    color: #fff;
+    line-height: 36px;
+    display: inline-block;
+    padding: 0px 25px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.pest-btn:before {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+
+.pest-btn:hover {
+    color:#fff;
+}
+
+.pest-btn:hover:before {
+    left: 120%;
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.cake-feature-item .cake-img:hover:before {
+    opacity: 1;
+}
+  
+.money {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #343434;
+    font-size: 26px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -95px;
+    line-height: 68px;
+    margin-bottom: 0px;
+    z-index: 2;
+}
+
+.cake-name {
+    font-size: 18px;
+    color: #343434;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 22px;
+    padding-top: 5px;
+}
+
+/* REVIEW CAKE */
+
+.cake-review {
+    display: flex;
+    background: url(./slider-2.jpg) no-repeat fixed center center;;
+    height: 75vh;   
+    position: relative; 
+    background-size: cover;
+    margin-left: -10px;
+    margin-right: -8px;
+}
+
+.cake-review .cake-review-img {
+    display: block;
+    width: 100%;
+    margin: 90px 200px 90px 100px;
+}
+
+.cake-review .cake-review-text {
+    margin-left: -700px;
+    border-left: 1px solid #fff;
+    color: white;
+    font-family: "Playfair Display", serif;
+    margin: 100px 200px 100px -400px;
+}
+
+.cake-review .cake-review-text h4 { 
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0px 0px 20px 50px;
+}
+
+.cake-review .cake-review-text p {
+    margin: 0px 0px 32px 50px;
+    font-size: 20px;
+}
+
+.cake-review .cake-review-text a {
+    font-family: "Open Sans", sans-serif;
+    color: #999999;
+    margin: 0px 428px 32px 50px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0 35px;
+    border-radius: 22px;
+    font-weight: 600px;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 45px;
+    border: 1px solid #e7e7e7;
+    display: block;
+    font-weight: 900;
+}
+
+.cake-review .pink-btn:hover {
+    color: palevioletred;
+    transition: 0.3s;
+}
+
+/* CAKES */
+
+
+.main-services {
+    background: url(./service-bg.jpg);
+    margin: -36px -8px 0px -10px;
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+
+.main-services img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: -20px;
+}
+
+.main-content {
+    padding-top: 40px;
+}
+
+.main-content .HR {
+    color: white;
+    margin-left: 650px;
+    margin-right: 650px;
+    margin-top: -30px;
+}
+
+.main-services .main-services-text {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 5px;
+    padding-top: 40px;
+}
+
+.main-content-cake {
+    color: #fff;
+    
+}
+
+.main-content-cake .CC4 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 20px 0px 15px 0px;
+}
+
+.main-content-cake p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
