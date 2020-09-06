@@ -7,3 +7,10 @@
    + App.css: css cho components App.
    + serviceWorker.js: quản lí server ứng dụng.
 - package: quản lí thông số ứng dụng (npm start sẽ dựa vào những thông số này để setup).
+- props là công cụ để lấy thuộc trong component.
+- event:
+   + nếu không có tham số thì k cần "()" khi gọi function.
+   + nếu có tham số:
+      ~ onClick={(e) => this.deleteRow(id, e), với e là tham số và id là nội dung.
+      ~ onClick={this.deleteRow.bind(this, id), với this là component hiện tại và id là thuộc tính 
+         cần truy xuất trong component this.

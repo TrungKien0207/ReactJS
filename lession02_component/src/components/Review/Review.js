@@ -13,7 +13,7 @@ class Review extends Component {
                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
                nisi ut aliquid ex ea commodi equatur uis autem vel eum.
                </p>
-               <a className="pink-btn" href="#">View Details</a>
+               <a className="pink-btn" href="a">View Details</a>
             </div>
          </div>
       );

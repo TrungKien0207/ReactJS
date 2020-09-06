@@ -5,11 +5,15 @@ body {
 
 }
 
+html {
+    font-size: 62.5%;
+}
+
 /* html {
     scroll-behavior: smooth;
 } */
 
-.menu-area{
+.menu-area {
     width: 100%;
     position: relative;
     line-height: 30px;
@@ -19,7 +23,8 @@ body {
     margin-bottom: 5px;
     border-bottom: 2px dashed #242424;
 }
-nav.black{
+
+nav.black {
     width: 100%;
     background: #f5dbdb;
     color: #242424;
@@ -30,21 +35,25 @@ nav.black{
     border-radius: 10px;
     border: 2px dashed palevioletred;
 }
-.menu-content{
+
+.menu-content {
     position: relative;
 
 }
-.menu-content ul{
+
+.menu-content ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menu-content ul li{
+
+.menu-content ul li {
     margin-right: 60px;
     list-style-type: none;
 
 }
-.menu-content ul li a{
+
+.menu-content ul li a {
     color: #242424;
     text-decoration: none;
     font-size: 20px;
@@ -62,7 +71,7 @@ nav.black{
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;   
+    background-size: cover;
 }
 
 .header .slider-text-box {
@@ -85,7 +94,7 @@ nav.black{
     margin-top: -50px
 }
 
-                                /* WELCOME */
+/* WELCOME */
 .welcome_bakery_area {
     background: url(./welcome-bg.jpg) no-repeat scroll center center;
     background-size: cover;
@@ -132,9 +141,9 @@ nav.black{
 
 .body-welcome .welcome-image {
     height: 363px;
-    width: 510px;   
+    width: 510px;
     margin: 100px 100px 150px 0;
-    
+
 }
 
 .body-welcome .welcome-image img {
@@ -192,6 +201,7 @@ nav.black{
     color: #797979;
     line-height: 30px;
 }
+
 /* item */
 .cake-feature-item {
     overflow: hidden;
@@ -201,11 +211,21 @@ nav.black{
     text-align: center;
     padding-bottom: 30px;
     background-color: #fff;
+    border: 0.25px solid rgb(214, 214, 214);
+    transition: 0.2s;
 }
+
+.cake-feature-item:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .cake_feature_slider {
     width: 100%;
     margin: 0 auto;
 }
+
 .item {
     display: flex;
     justify-content: space-around;
@@ -213,6 +233,7 @@ nav.black{
     padding-top: 50px;
     margin: 0px 80px 0 80px;
 }
+
 .cake-text {
     font-family: "Playfair Display", serif;
     position: relative;
@@ -251,14 +272,16 @@ nav.black{
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
-.pest-btn{
+
+.pest-btn {
     position: relative;
     z-index: 1000;
-    background: #94c9d9;
+    background: #5cc2e0;
     color: #fff;
     line-height: 36px;
     display: inline-block;
-    padding: 0px 25px;
+    padding: 0px 15px;
+    margin: 0px 2px;
     font-family: "Open Sans", sans-serif;
     position: relative;
     overflow: hidden;
@@ -266,6 +289,7 @@ nav.black{
     font-weight: 600;
     border-radius: 3px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .pest-btn:before {
@@ -273,7 +297,7 @@ nav.black{
     content: "";
     height: 155px;
     left: -75px;
-    opacity: .2;
+    opacity: .5;
     position: absolute;
     top: -50px;
     -webkit-transform: rotate(35deg);
@@ -286,7 +310,8 @@ nav.black{
 }
 
 .pest-btn:hover {
-    color:#fff;
+    color: #fff;
+    background: #48acca;
 }
 
 .pest-btn:hover:before {
@@ -299,7 +324,7 @@ nav.black{
 .cake-feature-item .cake-img:hover:before {
     opacity: 1;
 }
-  
+
 .money {
     width: 70px;
     height: 70px;
@@ -326,16 +351,17 @@ nav.black{
     color: #343434;
     font-family: "Playfair Display", serif;
     margin-bottom: 22px;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 /* REVIEW CAKE */
 
 .cake-review {
     display: flex;
-    background: url(./slider-2.jpg) no-repeat fixed center center;;
-    height: 75vh;   
-    position: relative; 
+    background: url(./slider-2.jpg) no-repeat fixed center center;
+    ;
+    height: 75vh;
+    position: relative;
     background-size: cover;
     margin-left: -10px;
     margin-right: -8px;
@@ -355,7 +381,7 @@ nav.black{
     margin: 100px 200px 100px -400px;
 }
 
-.cake-review .cake-review-text h4 { 
+.cake-review .cake-review-text h4 {
     font-size: 48px;
     font-weight: bold;
     margin: 0px 0px 20px 50px;
@@ -430,7 +456,7 @@ nav.black{
 
 .main-content-cake {
     color: #fff;
-    
+
 }
 
 .main-content-cake .CC4 {
@@ -449,4 +475,64 @@ nav.black{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon input {
+    margin: 2px 0 4px 0;
+    width: 80%;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #2979ff;
+    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    transition: border 0.2s ease-in;
+    text-align: center;
+}
+
+.input-icon input:focus {
+    border-color: #2979ff;
+}
+
+.input-icon i {
+    color: #07a787;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }

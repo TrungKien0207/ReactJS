@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Items from './Items/Items';
 
 class BodyWelcome extends Component {
    render() {
@@ -35,46 +36,13 @@ class BodyWelcome extends Component {
                {/* list item */}
                <div className="cake_feature_slider owl-carousel">
                   <div className="item">
-                     <div className="cake-feature-item">
-                        <div className="cake-img">
-                           <img src="./c-feature-1.jpg" alt="" />
-                        </div>
-                        <div className="cake-text">
-                           <h4 className="money">$29</h4>
-                           <h3 className="cake-name">Strawberry Cupcakes</h3>
-                           <a className="pest-btn" href="#">Add to cart</a>
-                        </div>
-                     </div>
-                     <div className="cake-feature-item">
-                        <div className="cake-img">
-                           <img src="./c-feature-2.jpg" alt="" />
-                        </div>
-                        <div className="cake-text">
-                           <h4 className="money">$30</h4>
-                           <h3 className="cake-name">Strawberry Cupcakes</h3>
-                           <a className="pest-btn" href="#">Add to cart</a>
-                        </div>
-                     </div>
-                     <div className="cake-feature-item">
-                        <div className="cake-img">
-                           <img src="./c-feature-3.jpg" alt="" />
-                        </div>
-                        <div className="cake-text">
-                           <h4 className="money">$35</h4>
-                           <h3 className="cake-name">Strawberry Cupcakes</h3>
-                           <a className="pest-btn" href="#">Add to cart</a>
-                        </div>
-                     </div>
-                     <div className="cake-feature-item">
-                        <div className="cake-img">
-                           <img src="./c-feature-4.jpg" alt="" />
-                        </div>
-                        <div className="cake-text">
-                           <h4 className="money">$29</h4>
-                           <h3 className="cake-name">Strawberry Cupcakes</h3>
-                           <a className="pest-btn" href="#">Add to cart</a>
-                        </div>
-                     </div>
+                     
+                     {/* import items */}
+                     <Items price="$29" images="./c-feature-1.jpg">Strawberry Cupcakes</Items> 
+                     <Items price="$30" images="./c-feature-2.jpg">Orange Cupcakes</Items> 
+                     <Items price="$25" images="./c-feature-3.jpg">Cherry Cupcakes</Items> 
+                     <Items price="$32" images="./c-feature-4.jpg">Banana Cupcakes</Items> 
+
                   </div>
                </div>
             </div>
