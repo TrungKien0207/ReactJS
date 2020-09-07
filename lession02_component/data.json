@@ -1,0 +1,22 @@
+let product = [
+   {
+      name: "Strawberry Cupcakes",
+      prices: "$29",
+      images: "./c-feature-1.jpg"
+   },
+   {
+      name: "Orange Cupcakes",
+      prices: "$30",
+      images: "./c-feature-2.jpg"
+   },
+   {
+      name: "Cherry Cupcakes",
+      prices: "$25",
+      images: "./c-feature-3.jpg"
+   },
+   {
+      name: "Banana Cupcakes",
+      prices: "$32",
+      images: "./c-feature-4.jpg"
+   }
+]

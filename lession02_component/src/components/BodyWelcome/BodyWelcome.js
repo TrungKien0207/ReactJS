@@ -2,6 +2,44 @@ import React, { Component } from 'react';
 import Items from './Items/Items';
 
 class BodyWelcome extends Component {
+   
+   constructor(props) {
+      super(props);
+
+      this.state = {
+         products: [
+            {
+               name: "Strawberry Cupcakes",
+               prices: "$29",
+               images: "./c-feature-1.jpg"
+            },
+            {
+               name: "Orange Cupcakes",
+               prices: "$30",
+               images: "./c-feature-2.jpg"
+            },
+            {
+               name: "Cherry Cupcakes",
+               prices: "$25",
+               images: "./c-feature-3.jpg"
+            },
+            {
+               name: "Banana Cupcakes",
+               prices: "$32",
+               images: "./c-feature-4.jpg"
+            }
+         ]
+      };
+   }
+   
+   show_products = () => {
+      const listProducts = this.state.products.map((item, index) => 
+         <Items key={ index } price={ item.prices } images={ item.images}>{ item.name }</Items>
+      );
+
+      return listProducts;
+   }
+   
    render() {
       return (
          <div className="welcome_bakery_area" id="introductory">
@@ -38,10 +76,12 @@ class BodyWelcome extends Component {
                   <div className="item">
                      
                      {/* import items */}
-                     <Items price="$29" images="./c-feature-1.jpg">Strawberry Cupcakes</Items> 
+                     { this.show_products() }
+
+                     {/* <Items price="$29" images="./c-feature-1.jpg">Strawberry Cupcakes</Items> 
                      <Items price="$30" images="./c-feature-2.jpg">Orange Cupcakes</Items> 
                      <Items price="$25" images="./c-feature-3.jpg">Cherry Cupcakes</Items> 
-                     <Items price="$32" images="./c-feature-4.jpg">Banana Cupcakes</Items> 
+                     <Items price="$32" images="./c-feature-4.jpg">Banana Cupcakes</Items>  */}
 
                   </div>
                </div>
