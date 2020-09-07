@@ -19,14 +19,18 @@ class Items extends Component {
 
    buttonSave = () => {
       this.setState({ editing: false });
-      console.log(this.txtName.value);
+      this.props.edit( this.props.index, this.txtName.value );
+   }
+
+   buttonDelete = () => {
+      this.props.delete(this.props.index);
    }
 
    renderNormal= () => {
       return (
          <div>
             <button className="pest-btn" onClick={ () => this.buttonEdit() }>Edit</button>
-            <button className="pest-btn">Remove</button>
+            <button className="pest-btn" onClick={ () => this.buttonDelete() }>Remove</button>
          </div>
       );
    }

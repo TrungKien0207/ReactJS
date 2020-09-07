@@ -34,12 +34,24 @@ class BodyWelcome extends Component {
    
    show_products = () => {
       const listProducts = this.state.products.map((item, index) => 
-         <Items key={ index } price={ item.prices } images={ item.images}>{ item.name }</Items>
+         <Items key={ index } index = {index} price={ item.prices } edit={ (id, name) => { this.editNameProducts(id, name) } } delete={ (id) => {this.delete_products(id) } } images={ item.images}>{ item.name }</Items>
       );
 
       return listProducts;
    }
    
+   delete_products = (id) => {
+      let arrProduct = this.state.products;
+      arrProduct.splice(id, 1);
+      this.setState( { products: arrProduct } );
+   }
+
+   editNameProducts = (id, name) => {
+      let arrProduct = this.state.products;
+      arrProduct[id].name = name;
+      this.setState( { products: arrProduct } );
+   }
+
    render() {
       return (
          <div className="welcome_bakery_area" id="introductory">
@@ -71,18 +83,14 @@ class BodyWelcome extends Component {
                   <p className="title-1"> Our Featured Cakes</p>
                   <p className="title-2"> Seldolor sit amet consect etur</p>
                </div>
+               
                {/* list item */}
                <div className="cake_feature_slider owl-carousel">
                   <div className="item">
-                     
+                  
                      {/* import items */}
                      { this.show_products() }
-
-                     {/* <Items price="$29" images="./c-feature-1.jpg">Strawberry Cupcakes</Items> 
-                     <Items price="$30" images="./c-feature-2.jpg">Orange Cupcakes</Items> 
-                     <Items price="$25" images="./c-feature-3.jpg">Cherry Cupcakes</Items> 
-                     <Items price="$32" images="./c-feature-4.jpg">Banana Cupcakes</Items>  */}
-
+                  
                   </div>
                </div>
             </div>

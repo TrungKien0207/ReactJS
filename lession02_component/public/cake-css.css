@@ -512,6 +512,7 @@ button {
 
 .input-icon {
     position: relative;
+    z-index: 2;
 }
 
 .input-icon input {
