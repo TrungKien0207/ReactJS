@@ -1,0 +1,32 @@
+[
+   {
+      "id": 1,
+      "ten": "Bãi biển Phú Quốc",
+      "gia": 1000000
+   },
+   {
+      "id": 2,
+      "ten": "Bãi biển Vũng Tàu",
+      "gia": 2000000
+   },
+   {
+      "id": 3,
+      "ten": "Bãi biển Nha Trang",
+      "gia": 3000000
+   },
+   {
+      "id": 4,
+      "ten": "Bãi biển Hà Tiên",
+      "gia": 4000000
+   },
+   {
+      "id": 5,
+      "ten": "Bãi biển Cửa Đại",
+      "gia": 5000000
+   },
+   {
+      "id": 6,
+      "ten": "Bãi biển Côn Đảo",
+      "gia": 6000000
+   }
+]

@@ -1,18 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navv from '../Navv/Navv';
-import Homee from '../Home/Homee';
-import Products from '../product/Products';
+import RouterURL from '../RouterURL/RouterURL';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Navv></Navv>
+    <Router>
       <div>
-        <Products></Products>
+        <Navv></Navv>
+        <div>
+          <RouterURL></RouterURL>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
