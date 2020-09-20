@@ -7,6 +7,7 @@ import Homee from '../Home/Homee';
 import Products from '../product/Products';
 import Contact from '../contact/Contact';
 import Eri from '../error/Eri';
+import Details from '../Detail/Details';
 
 class RouterURL extends Component {
    render() {
@@ -23,6 +24,9 @@ class RouterURL extends Component {
 
                <Route path="/contact">
                   <Contact/>
+               </Route>
+
+               <Route path="/chi-tiet/:id/:to_slug.html" render={(props) => <Details {...props}/>} >
                </Route>
 
                <Route>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import {
+   Link
+} from "react-router-dom";
 class Items extends Component {
    to_slug(str) {
     // Chuyển hết sang chữ thường
@@ -42,9 +44,9 @@ class Items extends Component {
                      Đảo Phú Quốc cùng với các đảo khác tạo thành huyện đảo Phú Quốc trực thuộc tỉnh Kiên Giang. 
                   </p>
                   <h6>Giá tour: { this.props.price } VND</h6>
-                  <a href={ "chi-tiet/" + this.props.pid + "/" + this.to_slug(this.props.children) + ".html"} className="btn btn-info float-right">
+                  <Link to={ "chi-tiet/" + this.props.pid + "/" + this.to_slug(this.props.children) + ".html"} className="btn btn-info float-right">
                      Chi tiết<i className="fas fa-chevron-right pl-1" />
-                  </a>
+                  </Link>
                </div>
             </div>
          </div>
